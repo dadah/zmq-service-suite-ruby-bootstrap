@@ -3,4 +3,4 @@
 require_relative '../config/boot'
 require 'zss/runner'
 
-ZSS::Runner.run("zss-hello-word") # substitute with your service sid 
+ZSS::Runner.run("hello-word") # substitute with your service sid 

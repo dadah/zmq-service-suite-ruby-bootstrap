@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+require_relative '../config/boot'
+require 'zss/client'
+config = {
+  frontend: Settings.broker.frontend,
+  identity: :venue,
+  timeout: 1000
+}
+
+sid = "hello-word"
+
+client = ZSS::Client.new(sid, config)
+p client.hello_world()
