@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require_relative '../config/boot'
+require 'zss/runner'
+
+ZSS::Runner.run("zss-hello-word") # substitute with your service sid 

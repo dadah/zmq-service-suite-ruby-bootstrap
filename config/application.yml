@@ -1,0 +1,15 @@
+defaults: &defaults
+  broker:
+    backend: tcp://127.0.0.1:7776
+  logging:
+    console:
+      level: info
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
