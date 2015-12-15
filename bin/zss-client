@@ -4,7 +4,6 @@ require_relative '../config/boot'
 require 'zss/client'
 config = {
   frontend: Settings.broker.frontend,
-  identity: :venue,
   timeout: 1000
 }
 
