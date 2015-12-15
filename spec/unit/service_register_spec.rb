@@ -8,7 +8,7 @@ describe ZSS::ServiceRegister do
         backend: Settings.broker.backend
       })
 
-      expect(ZSS::Service).to receive(:new).with(:city, config) { service }
+      expect(ZSS::Service).to receive(:new).with(:"hello-world", config) { service }
       expect(HelloWorldService).to receive(:new) { helloWorldInstance }
     end
 
@@ -20,7 +20,7 @@ describe ZSS::ServiceRegister do
       end
 
       specify 'hello_world' do
-        expect(service).to have_received(:add_route).with(locationInstance, "HELLO/WORLD", :get)
+        expect(service).to have_received(:add_route).with(helloWorldInstance, "HELLO/WORLD", :get)
       end
 
     end

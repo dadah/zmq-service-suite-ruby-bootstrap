@@ -6,7 +6,7 @@ module ZSS
         backend: Settings.broker.backend
       )
 
-      service = ZSS::Service.new(:"hello-word", config)
+      service = ZSS::Service.new(:"hello-world", config)
 
       helloWorldInstance = HelloWorldService.new
 
